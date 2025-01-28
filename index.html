@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <title>GGR472 Lab 1</title>
+    <!-- Custom css -->
+    <link href="static/styles.css" rel="stylesheet">
+    <!-- Themed bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/litera/bootstrap.min.css" rel="stylesheet">
+    <!-- Browser icon -->
+    <link rel="icon" href="static/bike-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">GGR472</a>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="clicker.html">Clicker</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Main page content -->
+    <div class="bike-bg justify-content-center align-items-center">
+        <div class="card-container">
+            <div class="card">
+                <h3 class="card-header">Mapping Toronto Bikeshare</h3>
+                <div class="card-body">
+                    <h5 class="card-title">GGR472 Lab 1</h5>
+                    <h6>Joseph French</h6>
+                    <div class="card-text">
+                        <!-- Gif of bike share progress, from https://shifttransit.net/celebrating-10-years-of-bike-share-toronto/ -->
+                        <img class="bikeshare-gif"
+                            src="static/Bike-Share-TL.gif" alt="Timelapse of Bike Share Stations in Toronto from 2011-2021"
+                            style="max-width: 50%; max-height: 50%;" />
+                        <!-- Link to open the geojson -->
+                        <p>Check out <a href="static/stations.geojson" target="_blank">GeoJSON of the Toronto bikeshare
+                                program data</a></p>
+                        <!-- Link to official bike share faq -->
+                        <p>Read more about <a href="https://bikesharetoronto.com/faq/">Toronto's bikeshare initiative</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+.bike-bg {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: calc(100vh - 58px); /* Full page minus navbar height */
+}
+
+/* Card with slightly transparent background and centered text */
+.card {
+    background: rgba(33, 37, 41, 0.9) !important;
+    width: 80%;
+    text-align: center;
+}
+
+/* Make card fit page */
+.card-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* Fix size of bikeshare gif */
+.bikeshare-gif {
+    max-width: 50%;
+    max-height: 50;
+    margin-bottom: 1rem;
+}
+
+/* Spacing around buttons for clicker game */
+.open-buttons {
+    margin: 12px;
+}
+
+/* Make all the clicker game unlocked text show on one line */
+.unlocked {
+    display: flex;
+    flex-direction: row;
+}
+
+/* For the clicker game, center the alerts and make them not as wide */
+.clicker-alert {
+    width: 80%;
+    left: 10%;
+}

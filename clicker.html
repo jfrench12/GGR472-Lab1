@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <title>BikeClicker | GGR472 Lab 1</title>
+    <!-- Custom css -->
+    <link href="static/styles.css" rel="stylesheet">
+    <!-- Themed bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.3/dist/litera/bootstrap.min.css" rel="stylesheet">
+    <!-- Browser icon -->
+    <link rel="icon" href="static/bike-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">GGR472</a>
+            <div class="navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="clicker.html">Clicker</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Clicker game script -->
+    <script src="static/clicker.js"></script>
+    <!-- Main page content -->
+    <div class="bike-bg justify-content-center align-items-center">
+        <div class="card-container">
+            <div class="card">
+                <h3 class="card-header">Bike Clicker</h3>
+                <div class="card-body clicker-body">
+                    <h5 class="card-title">Toronto currently has 664 bikeshare stations</h5>
+                    <div>That's a lot of bike sharing!<br>Use the buttons below to unlock random stations. Try to
+                        collect them all!</div>
+                    <div class="open-buttons">
+                        <button type="button" class="btn btn-lg btn-primary" onclick="openStation(1)">Open a 🚲
+                            station</button>
+                        <button type="button" class="btn btn-lg btn-info" onclick="openStation(10)">Open 10 🚲
+                            stations</button>
+                        <button type="button" class="btn btn-lg btn-success" onclick="openStation(100)">Open 100 🚲
+                            stations</button>
+                    </div>
+                    <!-- Div containing the status of the last opening. Don't display at first, to be shown after opening a station -->
+                    <div class="alert alert-light clicker-alert" id="unlockstatus" style="display: none;"></div>
+                    <!-- Div containing the count of unlocked stations. Will be updated with js when stations are opened -->
+                    <h3>Unlocked: <span id="unlockedcount">0</span>/664</h3>
+                    <!-- Div with victory text -->
+                    <div class="alert alert-success clicker-alert" id="victory" style="display: none;">
+                        <h4>Victory!</h4>
+                        You've unlocked all the stations... for now!
+                        Toronto is always working to improve their bike stations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
